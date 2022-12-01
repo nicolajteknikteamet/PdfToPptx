@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>progress_image_100_242c235c-799e-4686-84bb-d6c45101d522 (1).ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="progress_image_100_242c235c-799e-4686-84bb-d6c45101d522 (1).ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PDFtoImage" Version="2.1.2" />
+    <PackageReference Include="ShapeCrawler" Version="0.37.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Blank.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SourceTemplate.pptx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
